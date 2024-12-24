@@ -1,5 +1,6 @@
 import { Space_Grotesk, Ubuntu } from "next/font/google";
 import "./globals.css";
+import { Layout } from "./components/Layout";
 
 
 const Spacegrotesk=Space_Grotesk ({
@@ -17,7 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={` ${Spacegrotesk.variable} ${ubuntu.variable} `}> 
-        {children}
+        <Layout>
+          {children}
+        </Layout>
+        
       </body>
     </html>
   );

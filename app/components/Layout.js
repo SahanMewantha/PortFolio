@@ -5,7 +5,7 @@ import TopLeftImg from './TopLeftImg'
 
 export const Layout = ({children}) => {
   return (
-    <div>
+    <div className={`page bg-site text-white bg-cover bg-no-repeat font-Ubuntu relative`}>
       <TopLeftImg/>
       <Nav/>
       <Header/>

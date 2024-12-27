@@ -13,6 +13,7 @@
     "framer-motion": "^11.15.0",
     "my-pf": "file:",
     "next": "15.1.2",
+    "next-router-mock": "^0.9.13",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",

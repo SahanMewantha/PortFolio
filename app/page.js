@@ -1,9 +1,75 @@
+"use client";
+import { Typewriter } from "react-simple-typewriter";
+import ProjectsBtn from "./components/ProjectsBtn";
+import { motion } from "framer-motion";
+
+
+const fadeIn = (direction = "up", delay = 0.4) => {
+  return {
+    hidden: {
+      opacity: 0,
+      y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
+      x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        delay: delay,
+        ease: "easeInOut",
+      },
+    },
+  };
+};
+
 
 
 export default function Home() {
   return (
     <>
-    <div className="text-3xl font-Ubuntu text-white">home</div>
+    <div className="bg-secondary/60 h-full font-Ubuntu">
+    <div className="w-full h-full bg-gradient-to-r from-secondary/10 via-black/30 to-black/10">
+      <div className="text-center flex flex-col justify-center xl:pt-30 xl:text-left h-full container mx-auto">
+        <h1 className="h1">Hi, It'S {' '}
+        <span className="text-[#9d0c2e]">Sahan</span><br/>
+        I'm a {' '}
+        <span className="text-[#9d0c2e]">
+        <Typewriter
+                  words={['developer', 'designer', 'creator']}
+                  loop={true}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+        </span><br/>
+        </h1>
+        <p>
+        Choosing colors or typography for your website?<br/>
+        Use the Toolbar below to realize your choices.
+        </p>
+
+        
+
+        <div className="flex justify-center xl:hidden relative">
+            <ProjectsBtn/>
+        </div>
+        <motion.div
+        variants={fadeIn('up',0.6)}
+        initial='hidden'
+        animate='show'
+        exit='hidden'
+        className="hidden xl:flex"
+        >
+          <ProjectsBtn/>
+        </motion.div>
+      </div>
+      <div>image</div>
+    </div>
+    </div>
     
     </>
   );

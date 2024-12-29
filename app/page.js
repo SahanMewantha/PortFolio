@@ -77,7 +77,7 @@ export default function Home() {
 
         <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full
-        h-full absolute mix-blend-color-dodge translate-z-0 ml-7"></div>
+        h-full absolute mix-blend-color-dodge translate-z-0 ml-2"></div>
 
         <div>
           <ParticlesContainer/>
@@ -89,7 +89,7 @@ export default function Home() {
         animate='show'
         
         transition={{duration:1, ease:'easeInOut'}}
-        className="w-full h-full max-w-[450px] xl:max-h-[678px] absolute -bottom-52 lg-bottom-0 lg:right-[10%]">
+        className="w-full h-full max-w-[450px] xl:max-h-[678px] absolute -bottom-52 lg-bottom-0 lg:right-[9%]">
           <Avatar/>
         </motion.div>
       </div>

@@ -11,9 +11,12 @@ const Header = () => {
 
     <header className='absolute z-30 w-full flex items-center px-14 xl:px-0 xl:h-[90px]'> 
       <div className='container mx-auto font-space-grotesk'>
-        <div  style={{ fontSize: '30px' }}>
+        
+        <div className='flex flex-col lg:flex-row justify-between items-center gap-y-6 py-4'>
           <Link href='/'>
-          <GlitchText theme='red' text={'Sahan Mewantha'} />
+          <div  style={{ fontSize: '30px' }}>
+            <GlitchText theme='red' text={'Sahan Mewantha'} />          
+          </div>
           </Link>
           <Socials/>
         </div>

@@ -5,6 +5,8 @@ import { Layout } from "./components/Layout";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import Transition from "./components/Transition";
+import "./glitch.css"
+
 
 
 

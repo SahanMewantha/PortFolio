@@ -5,6 +5,7 @@ import { SiNextdotjs, SiFramer, SiSpring, SiAdobephotoshop, SiCplusplus, SiMysql
 import { TbBrandCSharp, TbBrandKotlin } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
 import Circle from '../components/Circle'
+import { motion } from "framer-motion";
 
 
 export const aboutData = [
@@ -60,6 +61,26 @@ export const aboutData = [
 
 ];
 
+const fadeIn = (direction = "up", delay = 0.4) => {
+  return {
+    hidden: {
+      opacity: 0,
+      y: direction === "up" ? 50 : direction === "down" ? -50 : 0,
+      x: direction === "left" ? 50 : direction === "right" ? -50 : 0,
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        delay: delay,
+        ease: "easeInOut",
+      },
+    },
+  };
+};
+
 
 const page = () => {
   const [index, setIndex] = useState(0)
@@ -71,13 +92,28 @@ const page = () => {
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 '>
 
         <div className='flex-1 flex flex-col justify-center'>
-          <h2 className='xl:h2 text-2xl'>Captivating <span className='text-[#9d0c2e]'>stories</span> birth magnificent designs.</h2>
-          <p className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>The Firebase Realtime Database is a cloud-hosted database. 
+          <motion.h2
+          variants={fadeIn('down',0.3)}
+          initial='hidden'
+          animate='show'
+
+          className='xl:h2 text-2xl'>Captivating <span className='text-[#9d0c2e]'>stories</span> birth magnificent designs.
+          </motion.h2>
+          
+          <motion.p
+          variants={fadeIn('down',0.3)}
+          initial='hidden'
+          animate='show'
+          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>The Firebase Realtime Database is a cloud-hosted database. 
             Data is stored as JSON and synchronized in realtime to every connected client.
-            When you</p>
+            When you</motion.p>
         </div>
 
-        <div className='flex flex-col w-full xl:max-w-[48%] h-[380px]'>
+        <motion.div
+        variants={fadeIn('right',0.3)}
+        initial='hidden'
+        animate='show'
+        className='flex flex-col w-full xl:max-w-[48%] h-[380px]'>
           <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
             {aboutData.map((item,itemIndex) => {
               return(
@@ -112,7 +148,7 @@ const page = () => {
                ) 
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
     

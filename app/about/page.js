@@ -97,15 +97,15 @@ const page = () => {
           initial='hidden'
           animate='show'
 
-          className='xl:h2 text-2xl'>Captivating <span className='text-[#9d0c2e]'>stories</span> birth magnificent designs.
+          className='xl:h2 text-2xl'>Crafting  <span className='text-[#9d0c2e]'>stories</span> Designing Dreams.
           </motion.h2>
           
           <motion.p
           variants={fadeIn('down',0.3)}
           initial='hidden'
           animate='show'
-          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>The Firebase Realtime Database is a cloud-hosted database. 
-            Data is stored as JSON and synchronized in realtime to every connected client.
+          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>I'm a web developer with a passion for crafting innovative digital experiences.
+          I combine technical expertise with creative vision. Dive into this space to explore my skills, credentials, and journey.
             When you</motion.p>
         </div>
 

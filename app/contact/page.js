@@ -12,10 +12,10 @@ const page = () => {
 
     emailjs
       .sendForm(
-        'service_sy7uveh', // Replace with your EmailJS service ID
-        'template_zt6i1gb', // Replace with your EmailJS template ID
+        'service_sy7uveh', // EmailJS service ID
+        'template_zt6i1gb', // EmailJS template ID
         formRef.current,
-        'MB0zaOz-ahk-D-D5D' // Replace with your EmailJS user ID
+        'MB0zaOz-ahk-D-D5D' // EmailJS user ID
       )
       .then(
         (result) => {

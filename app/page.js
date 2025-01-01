@@ -49,35 +49,39 @@ export default function Home() {
                   />
           </span><br/>
           </h1>
-          <motion.p
-          variants={fadeIn('down',0.3)}
-          initial='hidden'
-          animate='show'
-          
-          >
-          Choosing colors or typography for your website?<br/>
-          Use the Toolbar below to realize your choices.
-          </motion.p>
+            <motion.p
+            variants={fadeIn('down',0.3)}
+            initial='hidden'
+            animate='show'
+            className="!xl:text-left xl:max-w-[500px] "
+            >
+            Step into my world of creativity—learn my story,
+            dive into my work,
+            and let’s connect to craft something extraordinary together.
+            </motion.p>
 
-          
-
-          <div className="flex justify-center xl:hidden relative">
-              <ProjectsBtn/>
+          {/* not work */}
+          <div className="flex justify-center xl:hidden ">
+              <ProjectsBtn/> 
           </div>
+
+          
           <motion.div
             variants={fadeIn('down',0.6)}
             initial='hidden'
             animate='show'
-            
             className="hidden xl:flex"
             >
               <ProjectsBtn/>
           </motion.div>
+
+         
         </div>
+        
 
         <div className="w-[1200px] h-full absolute right-0 bottom-0 ">
         <div className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full
-        h-full absolute mix-blend-color-dodge translate-z-0 ml-2"></div>
+        h-full absolute mix-blend-color-dodge translate-z-0 ml-12"></div>
 
         <div>
           <ParticlesContainer/>

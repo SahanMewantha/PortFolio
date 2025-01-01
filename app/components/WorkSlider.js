@@ -7,19 +7,19 @@ export const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/1.png',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/2.png',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/3.png',
         },
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/4.png',
         },
       ],
     },
@@ -27,19 +27,19 @@ export const workSlider = {
       images: [
         {
           title: 'title',
-          path: '/thumb4.jpg',
+          path: '/5.png',
         },
         {
           title: 'title',
-          path: '/thumb1.jpg',
+          path: '/6.png',
         },
         {
           title: 'title',
-          path: '/thumb2.jpg',
+          path: '/7.png',
         },
         {
           title: 'title',
-          path: '/thumb3.jpg',
+          path: '/8.png',
         },
       ],
     },

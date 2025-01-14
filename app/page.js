@@ -61,7 +61,7 @@ export default function Home() {
             </motion.p>
 
           {/* not work */}
-          <div className="flex justify-center xl:hidden ">
+          <div className="flex justify-center xl:hidden z-10">
               <ProjectsBtn/> 
           </div>
 

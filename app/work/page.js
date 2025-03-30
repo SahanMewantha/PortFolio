@@ -46,9 +46,8 @@ const page = () => {
             variants={fadeIn('down',0.3)}
             initial='hidden'
             animate='show'
-            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Here’s where creativity meets functionality. 
-              Explore my journey through projects like a comprehensive Farm Management System and a visually stunning Photographer Portfolio.
-             Each project reflects my passion for solving problems and crafting meaningful digital experiences.
+            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>Here’s where creativity meets functionality. Explore my journey through projects like a comprehensive Farm Management System, a visually stunning Photographer Portfolio, and an innovative Smart Waste Management System. 
+            Each project reflects my passion for solving problems and crafting meaningful digital experiences.
             When you
             </motion.p>
           </div>

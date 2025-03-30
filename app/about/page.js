@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaFigma, FaNodeJs } from 'react-icons/fa'
-import { SiNextdotjs, SiFramer, SiSpring, SiAdobephotoshop, SiCplusplus, SiMysql, SiMongodb, SiOracle, SiPhp } from 'react-icons/si'
+import { FaHtml5, FaCss3, FaJs, FaReact, FaJava, FaFigma, FaNodeJs, FaPython } from 'react-icons/fa'
+import { SiNextdotjs, SiFramer, SiSpring, SiAdobephotoshop, SiCplusplus, SiMysql, SiMongodb, SiOracle, SiPhp, SiFlask, SiJupyter } from 'react-icons/si'
 import { TbBrandCSharp, TbBrandKotlin } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
 import Circle from '../components/Circle'
@@ -29,7 +29,9 @@ export const aboutData = [
     {icon:<TbBrandCSharp />},
     {icon:<SiCplusplus />},
     {icon:<TbBrandKotlin />},
-    {icon:<IoLogoFirebase />}
+    {icon:<IoLogoFirebase />},
+    {icon:<FaPython />},
+    {icon:<SiJupyter />},
     ]
     },
   
@@ -48,15 +50,16 @@ export const aboutData = [
       {icon:<SiSpring />},
       {icon:<TbBrandCSharp />},
       {icon:<SiPhp />},
+      {icon:<SiFlask />},
 
     ]
     },
   ]},
 
   {tittle:'Credentials',info:[
-    {tittle:'Web Development',stage:'NIBM-2022'},
+    {tittle:'Web Development',stage:'NIBM-2023'},
     {tittle:'Diploma in Computer Science',stage:'NIBM-2024'},
-    {tittle:'Higher Diploma in Computer Science',stage:'NIBM-2025'},
+    {tittle:'Higher Diploma in Computer Science',stage:'present'},
   ] }, 
 
 ];
@@ -104,9 +107,10 @@ const page = () => {
           variants={fadeIn('down',0.3)}
           initial='hidden'
           animate='show'
-          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>I'm a web developer with a passion for crafting innovative digital experiences.
-          I combine technical expertise with creative vision. Dive into this space to explore my skills, credentials, and journey.
-            When you</motion.p>
+          className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>I’m an undergraduate student at the National Institute of Business Management,
+          currently in my second year, with a strong passion for web development.I aim to become a Full Stack Developer,
+           combining technical skills and creativity to build innovative digital solutions.
+          </motion.p>
         </div>
 
         <motion.div

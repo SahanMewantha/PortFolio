@@ -4,6 +4,7 @@ import ProjectsBtn from "./components/ProjectsBtn";
 import { motion } from "framer-motion";
 import Avatar from "./components/Avatar";
 import ParticlesContainer from "./components/ParticlesContainer";
+import Head from "next/head";
 
 
 const fadeIn = (direction = "up", delay = 0.4) => {
@@ -31,6 +32,29 @@ const fadeIn = (direction = "up", delay = 0.4) => {
 export default function Home() {
   return (
     <>
+    <Head>
+              {/* Primary Meta Tags */}
+        <title>Sahan - Developer, Designer, Creator</title>
+        <meta name="description" content="Step into my world of creativity—learn my story, dive into my work, and let’s connect to craft something extraordinary together." />
+        <meta name="keywords" content="developer, designer, creator, portfolio, sahan" />
+        <meta name="author" content="Sahan" />
+
+        {/* Open Graph Meta Tags for Social Media */}
+        <meta property="og:title" content="Sahan - Developer, Designer, Creator" />
+        <meta property="og:description" content="Step into my world of creativity—learn my story, dive into my work, and let’s connect to craft something extraordinary together." />
+        <meta property="og:image" content="https://www.sahanmewantha.me/og-image.jpg" />
+        <meta property="og:url" content="https://www.sahanmewantha.me/" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sahan - Developer, Designer, Creator" />
+        <meta name="twitter:description" content="Step into my world of creativity—learn my story, dive into my work, and let’s connect to craft something extraordinary together." />
+        <meta name="twitter:image" content="https://www.sahanmewantha.me/twitter-image.jpg" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
     <div className="bg-secondary/60 h-full font-Ubuntu">
       <div className="w-full h-full bg-gradient-to-r from-secondary/10 via-black/30 to-black/10">
         <div className="text-center flex flex-col justify-center xl:pt-30 xl:text-left h-full container mx-auto">

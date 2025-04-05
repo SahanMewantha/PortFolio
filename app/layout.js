@@ -19,6 +19,8 @@ const ubuntu=Ubuntu({
 });
 
 
+
+
 export default function RootLayout({ children }) {
   const pathname = usePathname();
   return (

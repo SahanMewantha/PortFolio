@@ -8,7 +8,7 @@ const Circle = () => {
         width={260}
         height={200}
         className='w-full h-full'
-        alt='.'
+        alt="Sahan's profile picture as a developer and designer"
          />
     </div>
   )

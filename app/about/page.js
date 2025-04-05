@@ -6,6 +6,7 @@ import { TbBrandCSharp, TbBrandKotlin } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
 import Circle from '../components/Circle'
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 
 export const aboutData = [
@@ -89,6 +90,54 @@ const page = () => {
   const [index, setIndex] = useState(0)
   console.log(index)
   return (
+  <>
+    <Head>
+        {/* Primary Meta Tags */}
+        <title>Sahan - Web Developer, Designer, and Student</title>
+        <meta name="description" content="Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects." />
+        <meta name="keywords" content="Sahan, web developer, designer, NIBM, Full Stack Developer, web development, UI/UX design" />
+        <meta name="author" content="Sahan" />
+
+        {/* Open Graph Meta Tags for Social Media */}
+        <meta property="og:title" content="Sahan - Web Developer, Designer, and Student" />
+        <meta property="og:description" content="Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects." />
+        <meta property="og:image" content="https://www.sahanmewantha.me/sahan-profile.jpg" />
+        <meta property="og:url" content="https://www.sahanmewantha.me/about" />
+        <meta property="og:type" content="profile" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sahan - Web Developer, Designer, and Student" />
+        <meta name="twitter:description" content="Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects." />
+        <meta name="twitter:image" content="https://www.sahanmewantha.me/sahan-profile.jpg" />
+
+        <script type="application/ld+json">
+{`
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sahan",
+    "jobTitle": "Web Developer and Designer",
+    "url": "https://www.sahanmewantha.me/about",
+    "image": "https://www.sahanmewantha.me/sahan-profile.jpg",
+    "description": "Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies.",
+    "sameAs": [
+      "https://www.linkedin.com/in/sahan-mewantha-012ab4248/",
+      "https://github.com/SahanMewantha"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "National Institute of Business Management"
+    },
+    "knowsAbout": ["Web Development", "UI/UX Design", "Backend Development", "Full Stack Development"]
+  }
+`}
+</script>
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+      </Head>  
+    
     <div className='bg-secondary/30 h-full py-32 text-center xl:text-left'>
       <Circle/>
 
@@ -155,7 +204,7 @@ const page = () => {
         </motion.div>
       </div>
     </div>
-    
+  </>
   )
 }
 

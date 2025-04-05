@@ -43,7 +43,7 @@ export default function Home() {
         <meta property="og:title" content="Sahan - Developer, Designer, Creator" />
         <meta property="og:description" content="Step into my world of creativity—learn my story, dive into my work, and let’s connect to craft something extraordinary together." />
         <meta property="og:image" content="https://www.sahanmewantha.me/og-image.jpg" />
-        <meta property="og:url" content="https://www.sahanmewantha.me/" />
+        <meta property="og:url" content="https://www.sahanmewantha.me" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Card Meta Tags */}

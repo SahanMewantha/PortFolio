@@ -7,8 +7,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import Transition from "./components/Transition";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-
-
 const Spacegrotesk=Space_Grotesk ({
   subsets:['latin'],
   variable:'--font-space-grotesk',
@@ -18,8 +16,6 @@ const ubuntu=Ubuntu({
   weight: ['300', '400', '500', '700'],
   variable:'--font-ubuntu',
 });
-
-
 
 
 export default function RootLayout({ children }) {
@@ -34,8 +30,7 @@ export default function RootLayout({ children }) {
               {children}
               <SpeedInsights />
             </motion.div>
-          </AnimatePresence>
-          
+          </AnimatePresence> 
         </Layout>
         
       </body>

@@ -5,6 +5,7 @@ import { Layout } from "./components/Layout";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import Transition from "./components/Transition";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
             <motion.div key={pathname} className='h-full'>
               <Transition/>
               {children}
+              <SpeedInsights />
             </motion.div>
           </AnimatePresence>
           

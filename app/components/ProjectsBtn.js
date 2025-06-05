@@ -12,7 +12,7 @@ const ProjectsBtn = () => {
         src={'/rounded-text.png'}
         width={141}
         height={148}
-        alt='.'
+        alt='Projects button with rotating text saying "Explore My Work"'
 
         className='animate-spin-slow w-full h-full max-w-[141px] max-h-[148px] cursor-pointer'
         />

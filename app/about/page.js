@@ -6,31 +6,8 @@ import { TbBrandCSharp, TbBrandKotlin } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
 import Circle from '../components/Circle'
 import { motion } from "framer-motion";
-import Script from 'next/script';
+import Head from "next/head";
 
-
-export const metadata = {
-  title: "Sahan - Web Developer, Designer, and Student",
-  description: "Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects.",
-  keywords: ["Sahan", "web developer", "designer", "NIBM", "Full Stack Developer", "web development", "UI/UX design"],
-  author: "Sahan",
-  openGraph: {
-    title: "Sahan - Web Developer, Designer, and Student",
-    description: "Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects.",
-    images: [{ url: "https://www.sahanmewantha.me/sahan-profile.jpg" }],
-    url: "https://www.sahanmewantha.me/about",
-    type: "profile",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Sahan - Web Developer, Designer, and Student",
-    description: "Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects.",
-    images: ["https://www.sahanmewantha.me/sahan-profile.jpg"],
-  },
-  icons: {
-    icon: '/favicon.ico',
-  }
-};
 
 export const aboutData = [
   {tittle:'Web', info:[
@@ -114,31 +91,54 @@ const page = () => {
   console.log(index)
   return (
   <>
-    <Script
-      id="json-ld-person"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Sahan",
-          "jobTitle": "Web Developer and Designer",
-          "url": "https://www.sahanmewantha.me/about",
-          "image": "https://www.sahanmewantha.me/sahan-profile.jpg",
-          "description": "Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies.",
-          "sameAs": [
-            "https://www.linkedin.com/in/sahan-mewantha-012ab4248/",
-            "https://github.com/SahanMewantha"
-          ],
-          "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "National Institute of Business Management"
-          },
-          "knowsAbout": ["Web Development", "UI/UX Design", "Backend Development", "Full Stack Development"]
-        })
-      }}
-    />
-    <div className='bg-secondary/30 h-full py-16 sm:py-24 md:py-32 text-center xl:text-left'>
+    <Head>
+        {/* Primary Meta Tags */}
+        <title>Sahan - Web Developer, Designer, and Student</title>
+        <meta name="description" content="Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects." />
+        <meta name="keywords" content="Sahan, web developer, designer, NIBM, Full Stack Developer, web development, UI/UX design" />
+        <meta name="author" content="Sahan" />
+
+        {/* Open Graph Meta Tags for Social Media */}
+        <meta property="og:title" content="Sahan - Web Developer, Designer, and Student" />
+        <meta property="og:description" content="Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects." />
+        <meta property="og:image" content="https://www.sahanmewantha.me/sahan-profile.jpg" />
+        <meta property="og:url" content="https://www.sahanmewantha.me/about" />
+        <meta property="og:type" content="profile" />
+
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Sahan - Web Developer, Designer, and Student" />
+        <meta name="twitter:description" content="Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies. Explore his skills, credentials, and projects." />
+        <meta name="twitter:image" content="https://www.sahanmewantha.me/sahan-profile.jpg" />
+
+        <script type="application/ld+json">
+{`
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sahan",
+    "jobTitle": "Web Developer and Designer",
+    "url": "https://www.sahanmewantha.me/about",
+    "image": "https://www.sahanmewantha.me/sahan-profile.jpg",
+    "description": "Sahan is an undergraduate student at NIBM with expertise in web development, UI/UX design, and backend technologies.",
+    "sameAs": [
+      "https://www.linkedin.com/in/sahan-mewantha-012ab4248/",
+      "https://github.com/SahanMewantha"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "National Institute of Business Management"
+    },
+    "knowsAbout": ["Web Development", "UI/UX Design", "Backend Development", "Full Stack Development"]
+  }
+`}
+</script>
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+      </Head>  
+    
+    <div className='bg-secondary/30 h-full py-32 text-center xl:text-left'>
       <Circle/>
 
       <div className='container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 '>
@@ -166,8 +166,8 @@ const page = () => {
         variants={fadeIn('right',0.3)}
         initial='hidden'
         animate='show'
-        className='flex flex-col w-full xl:max-w-[48%] min-h-[300px] sm:min-h-[380px]'>
-          <div className='flex flex-wrap gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+        className='flex flex-col w-full xl:max-w-[48%] h-[380px]'>
+          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
             {aboutData.map((item,itemIndex) => {
               return(
                 <div

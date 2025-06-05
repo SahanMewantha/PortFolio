@@ -28,7 +28,7 @@ const fadeIn = (direction = "up", delay = 0.4) => {
 
 const page = () => {
   return (
-    <div className='h-full bg-secondary/30 py-16 sm:py-24 md:py-36 flex items-center '>
+    <div className='h-full "bg-secondary/30 py-36 flex items-center '>
       <Circle/>
 
       <div className='container mx-auto'>
